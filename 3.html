@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+ <div>
+  <a href="index.html" target="_self" >Home</a> 
+  <a href="2.html" target="_self">Modules S3</a> 
+  <a href="3.html" class="clear" >About</a>
+  </div>
+   <a href="3.html" id="ida"> return </a>
+   <p class="p1">
+     <button id="but1">Electronique</button>
+     <button id="but2">Technologie de web</button>
+     <button id="but3">Systéme d'exploitation (linux) </button>
+     <button id="but4">Probabilité et Statistique</button>
+     <button id="but5">Programmation I</button>
+     <button id="but6">Algorithme II</button>
+   </p>
+   <div id="iddiv"> <h3>  L'électronique numérique est un domaine scientifique s'intéressant aux systèmes électroniques dont les états parcourent un ensemble fini de possibilités.
+     Le déterminisme dans les changements d'état (transitions) permet de disposer de systèmes qui se comportent de manière stable et fiable. 
+     Elle permet en particulier de s'affranchir de parasites et autre déformations.
+     Ce type d'électronique est opposé à l'électronique analogique, qui, elle, traite des systèmes électroniques opérant sur des grandeurs (tension, courant, charge) variant de manière continue.
+                   </h3>
+  </div>
+  
+ <style>
+    body{
+      background-image: url("17.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   div{
+    position: absolute;
+    top: 5%;
+    right: 6%;
+   } 
+   div a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;  
+    font-family: system-ui;
+   }
+   div a:hover,.clear{
+    color: rgb(243, 246, 246);
+    border-radius: 15px;
+   } 
+   .p1{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 40%;
+   }
+   p button{
+    display: block;
+    width: 150px;
+    padding: 13px;
+    margin: 17px;
+    border-radius: 12px;
+   }
+   p button:hover{
+    background-color: rgb(241, 211, 111);
+    
+   }
+   #ida{
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: none;
+
+   }
+   #ida:hover{
+   color: rgb(253, 253, 253);
+  
+   }
+   #iddiv{
+   position: absolute;
+   top: 10%;
+   left: 40%;
+   height: 130px;
+   width: 260px;
+   
+   display: none;
+   font-size: 17;
+   
+   }
+ 
+ </style>  
+ <script>
+    but1 = document.getElementById('but1')
+    but2 = document.getElementById('but2')
+    but3 = document.getElementById('but3')
+    but4 = document.getElementById('but4')
+    but5 = document.getElementById('but5')
+    but6 = document.getElementById('but6') 
+    p1 = document.querySelector('.p1')
+    ida = document.getElementById('ida')
+    iddiv= document.getElementById('iddiv')
+    but1.onclick= function but1() {
+        p1.style.display='none'
+        ida.style.display ='block'
+        iddiv.style.display='block'
+                                  }
+    but2.onclick= function but2() {
+        p1.style.display='none'
+        ida.style.display ='block' 
+        iddiv.style.display='block'
+        iddiv.innerHTML=`<h3>HTML, CSS et JavaScript sont les noms de différents types de code fréquemment rencontrés dans le développement web.
+                    L'HTML permet l'affichage des informations de la page sur le navigateur, le CSS met en page son contenu et JavaScript intègre les animations et spécifie les interactions entre les éléments</h3>`}
+    but3.onclick= function but3() {
+        p1.style.display='none'
+        ida.style.display ='block'
+        iddiv.style.display='block'
+        iddiv.innerHTML=`<h3>Linux ou GNU/Linux est un système d'exploitation, ou un ensemble de système d'exploitation, de type Unix. 
+                      Sa particularité est d'être open source, développé de façon collaborative. Linux dispose de nombreuses distributions dont les plus connues sont : Ubuntu, Linux Mint, Debian ou encore Red Hat.</h3>`        }
+    but4.onclick= function but4() {
+        p1.style.display='none'
+        ida.style.display ='block'
+        iddiv.style.display='block'
+        iddiv.innerHTML=
+      `<h3>Les statistiques étudient des événements déroulés dans le passé à partir d'un grand nombre de données.
+       Leur rôle est de permettre l'analyse, l'interprétation et la présentation simplifiée de ces informations.
+       Les probabilités s'intéressent quant à elles à l'avenir. Elles ont pour but de déterminer la probabilité, c'est-à-dire la chance ou le risque,
+       qu'un événement aléatoire se produise. L'exemple classique est celui du lancer de dé. La probabilité de tomber sur 1, 2, 3, 4, 5 ou 6 est toujours la même ;
+        chacune des issues a 1 chance sur 6 de se réaliser.</h3>`      }
+   but5.onclick= function but5
+   () {
+        p1.style.display='none'
+        ida.style.display ='block'
+        iddiv.style.display='block'
+        iddiv.innerHTML=
+        `<h3>langage de programmation impératif conçu pour la programmation système. Inventé au début des années 1970 avec UNIX,
+        C est devenu un des langages les plus utilisés. De nombreux langages plus modernes comme C++, 
+        Java et PHP reprennent des aspects de C.</h3>`    
+                                 } 
+    but6.onclick= function but6() {
+        p1.style.display='none'
+        ida.style.display ='block'
+        iddiv.style.display='block'
+        iddiv.innerHTML=`<h3>Un algorithme est composé d'instructions et d'opérations réalisées, dans un ordre précis,
+           sur des données afin de produire un résultat, et souvent résoudre un problème plus ou moins complexe.
+           Principalement utilisé en informatique, il sert aussi dans d'autres domaines comme la planification de ressources et la cryptographie.
+          Il peut s'appliquer à des données analogiques comme dans le cas du traitement d'image</h3>`        }
+
+
+
+ </script>
+</body>
+</html>
